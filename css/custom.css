@@ -1,0 +1,36 @@
+.row {
+	max-width: 100%;
+	/*background-color: gray;*/
+}
+
+#map {
+	height: 100vh;
+	background-color: #08304a; 
+	position: absolute;
+	float: left;
+	/*top: 1%;*/
+	width: 100%;
+	z-index: 7;
+}
+
+.centered {
+	text-align: center;
+}
+
+/*#hoverbar {
+	position: absolute;
+	border-width: 0 0 1px;
+	border-bottom: 1px solid #FFFFFF;
+	margin-top: 0%;
+	float: left;
+	left: 0%;
+	right: 0%;
+	top: 0%;
+	padding-left: 2%;
+	padding-right: 2%;
+	width: 100%;
+	height: auto;
+	opacity: .75;
+	padding-top: 4px;
+	overflow: auto;
+}*/
