@@ -1,19 +1,11 @@
-Early demo
-===========
-* A working demo can be found [here](http://www.sctimesapps.com/kaitest/leafletclickadd)
-* On mobile, tap-and-hold to add a marker
-
-
-Leaflet click-to-add-marker "app"
+Prototype community events mapping tool
 ===========
 
-A db-powered version of "User submitted leaflet" app, with an admin tool to monitor and manage the markers.
+Another iteration of the leaflet-based mapping tool.
 
-Benefits include ease-of-use for the user end and possibility for it to be automatically added to the map (this is turned off in the demo to avoid people adding inappropriate language).
+Goal is to provide an easy-to-use mapping tool for community members to list their public events. Targeted audience are community groups/leaders that host social events such as Smash Bros dailies or MtG Friday games etc.
 
-However, requires a database set up. "User submitted leaflet" circumvents this by having the markers be pulled from a Google spreadsheet (useful for smaller news orgs with only a front end webdev).
-
-Goal is to provide a right-click-to-add-marker app and circumvent the need to type in address, this would allow users to pinpoint locations that may not be address-friendly (such as potholes on roads, they're not exactly easy to mark with an address).
+Currently working on adding a datetime picker and proper user privileges, will follow that up with appropriate map filtering of makers.
 
 Recent changes
 ===========
