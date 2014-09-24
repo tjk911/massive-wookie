@@ -6,11 +6,13 @@
     <title>SCTimes Community Events prototype</title>
     <link rel="stylesheet" href="css/foundation.css" />
     <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/custom.css" />
     <link rel="stylesheet" href="leaflet/leaflet.css" />
     <link rel="stylesheet" href="css/MarkerCluster.Default.css">
     <link rel="stylesheet" href="css/MarkerCluster.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
+    <link rel="stylesheet" href="css/custom.css" />
+
 	<script type="text/javascript">
 	<?php
 	include('myitems.php');
@@ -19,5 +21,9 @@
     <script src="leaflet/leaflet.js"></script>
     <script src="js/leaflet-providers.js"></script>
     <script src="js/leaflet.markercluster-src.js"></script>
+    <link rel="stylesheet" href="css/foundation_calendar.css">
+
+
+
   </head>
   <body>	
