@@ -131,7 +131,7 @@
                       '<label><strong>Description:</strong></label>'+
                       '<input type="text" class="small-3 columns" placeholder="Optional" id="description" name="description" />'+
                       '<label><strong>Date & Time:</strong></label>'+
-                      '<input type="text" data-date-time />'+
+                      '<input id="eventCalendar" type="text" data-date-time />'+
                       '<input style="display: none;" type="text" id="lat" name="lat" value="'+ e.latlng.lat.toFixed(6)+'" />'+
                       '<input style="display: none;" type="text" id="lng" name="lng" value="'+ e.latlng.lng.toFixed(6)+'" /><br><br>'+
                       '<div class="row">'+
