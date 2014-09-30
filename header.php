@@ -11,8 +11,17 @@
     <link rel="stylesheet" href="css/MarkerCluster.css">
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
     <script src="js/vendor/modernizr.js"></script>
-    <link rel="stylesheet" href="css/custom.css" />
 
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.11.1/themes/smoothness/jquery-ui.css">
+      <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
+      <script>
+        $(function() {
+          $( "#eventCalendar" ).datepicker();
+        });
+        </script>
+
+    <link rel="stylesheet" href="css/custom.css" />
 	<script type="text/javascript">
 	<?php
 	include('myitems.php');

@@ -13,10 +13,6 @@
 
           // Hack to get off-canvas .menu-icon to fire on iOS
           $('.menu-icon').click(function(){ false });
-          $('#eventCalendar').bind('monthChange', function(evt, opts) {
-            console.info('monthChange triggered');
-            console.info(opts);
-          });
       });
     </script>
   </body>

@@ -79,7 +79,6 @@
           <h4>Login first please</h4>
             <label><strong>Username:</strong><input type="text" id="username" name="username" placeholder="DB Username" /></label>
             <label><strong>Password:</strong><input type="password" id="password" name="password" placeholder="DB Password" /></label>
-            <input type="text" data-date-time />
           <div class="row">
             <div class="left columns small-1"><button type="button" class="btn tiny" onclick="loginUser()">Submit</button></div>
           </div>
@@ -124,20 +123,18 @@
           function onMapClick(e) {
 
               var form = '<form class="row" id="inputform" enctype="multipart/form-data" class="well" style="width:300px;">'+
-                      '<label><strong>Name:</strong> <i>marker title</i></label>'+
-                      '<input type="text" class="small-3 columns" placeholder="Required" id="name" name="name" />'+
-                      '<label><strong>Email:</strong> <i>never shared</i></label>'+
-                      '<input type="text" class="small-3 columns" placeholder="Required" id="email" name="email" />'+
-                      '<label><strong>Description:</strong></label>'+
-                      '<input type="text" class="small-3 columns" placeholder="Optional" id="description" name="description" />'+
-                      '<label><strong>Date & Time:</strong></label>'+
-                      '<input id="eventCalendar" type="text" data-date-time />'+
-                      '<input style="display: none;" type="text" id="lat" name="lat" value="'+ e.latlng.lat.toFixed(6)+'" />'+
-                      '<input style="display: none;" type="text" id="lng" name="lng" value="'+ e.latlng.lng.toFixed(6)+'" /><br><br>'+
-                      '<div class="row">'+
-                        '<div class="small-6 columns center"><button type="button" class="btn small" onclick="insertUser()">Submit</button></div>'+
-                      '</div>'+
-                      '</form>';
+                          '<label><strong>Event:</strong> <i>event name</i></label>'+
+                          '<input type="text" class="small-3 columns" placeholder="Required" id="name" name="name" />'+
+                          '<label><strong>Description:</strong></label>'+
+                          '<input type="text" class="small-3 columns" placeholder="Optional" id="description" name="description" />'+
+                          '<label><strong>Date:</strong> </label>'+
+                          '<input id="eventCalendar" type="text"/>'+
+                          '<input style="display: none;" type="text" id="lat" name="lat" value="'+ e.latlng.lat.toFixed(6)+'" />'+
+                          '<input style="display: none;" type="text" id="lng" name="lng" value="'+ e.latlng.lng.toFixed(6)+'" /><br><br>'+
+                          '<div class="row">'+
+                            '<div class="small-6 columns center"><button type="button" class="btn small" onclick="insertUser()">Submit</button></div>'+
+                          '</div>'+
+                          '</form>'
 
             popup
               .setLatLng(e.latlng)

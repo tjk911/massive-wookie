@@ -14,7 +14,7 @@ $count = mysql_num_rows($result);
 if($count > 0) {
 echo "var myItems = [";
 while($row = mysql_fetch_array($result)) {
-	echo "[".$row['lat'].", ".$row['lng'].", '".$row['name']."', '".$row['description']."'],";
+	echo "[".$row['lat'].", ".$row['lng'].", '".$row['name']."', '".$row['date']."', '".$row['time']."', '".$row['description']."'],";
 }
 echo "]";
 }
