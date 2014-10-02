@@ -136,12 +136,16 @@
                           '</div>'+
                           '</form>'
 
+
+
             popup
               .setLatLng(e.latlng)
               .setContent(form)
               .openOn(map);
 
             var marker = new L.marker(e.latlng).addTo(map);
+
+            $('#eventCalendar').datepicker()
 
           }
 
