@@ -127,7 +127,7 @@
                           '<input type="text" class="small-3 columns" placeholder="Required" id="name" name="name" />'+
                           '<label><strong>Description:</strong></label>'+
                           '<input type="text" class="small-3 columns" placeholder="Optional" id="description" name="description" />'+
-                          '<label><strong>Date:</strong> </label>'+
+                          '<label><strong>Date & Time:</strong> </label>'+
                           '<input id="eventCalendar" type="text"/>'+
                           '<input style="display: none;" type="text" id="lat" name="lat" value="'+ e.latlng.lat.toFixed(6)+'" />'+
                           '<input style="display: none;" type="text" id="lng" name="lng" value="'+ e.latlng.lng.toFixed(6)+'" /><br><br>'+
@@ -145,7 +145,9 @@
 
             var marker = new L.marker(e.latlng).addTo(map);
 
-            $('#eventCalendar').datepicker()
+            // $('#eventCalendar').datepicker()
+
+            $('#eventCalendar').datetimepicker();
 
           }
 

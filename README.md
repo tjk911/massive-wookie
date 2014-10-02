@@ -10,6 +10,7 @@ Currently working on adding a datetime picker and proper user privileges, will f
 Recent changes
 ===========
 
+* Added date & time picker
 * Added markercluster plugin
 * Prepared markercluster layer for bulk loading of markers
 * Added form, switched to php and added relevant scripts for pushing/pulling from DBs
@@ -32,3 +33,9 @@ To Do
 * ~~Add admin tool to avoid trolls~~
 * ~~Work on session authentication and updating db~~
 * Style admin tool
+
+Special thanks
+===========
+* Chris Essig (@CEssig) from Gazette.com for his original mapping code
+* Jesse Hazel (@JesseWHazel) from the Courier Journal for helping troubleshoot the timepicker
+* Andrew Fraser (@AndrewFraser) from SCTimes for general code help 
