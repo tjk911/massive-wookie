@@ -161,7 +161,7 @@
             //           '<label><strong>Username:</strong><input type="text" id="username" name="username" placeholder="DB Username" /></label>'+
             //           '<label><strong>Password:</strong><input type="password" id="password" name="password" placeholder="DB Password" /></label>'+
             //           '<div class="row">'+
-            //             '<div class="small-6 small-push-2 columns center"><button type="button" class="btn tiny round" onclick="loginUser()">Submit</button></div>'+
+            //           '<div class="small-6 small-push-2 columns center"><button type="button" class="btn tiny round" onclick="loginUser()">Submit</button></div>'+
             //           '</div>'+
             //           '</form>';
 
