@@ -132,7 +132,7 @@
                           '<input style="display: none;" type="text" id="lat" name="lat" value="'+ e.latlng.lat.toFixed(6)+'" />'+
                           '<input style="display: none;" type="text" id="lng" name="lng" value="'+ e.latlng.lng.toFixed(6)+'" /><br><br>'+
                           '<div class="row">'+
-                            '<div class="small-6 columns center"><button type="button" class="btn small" onclick="insertUser()">Submit</button></div>'+
+                            '<div class="small-6 columns center"><button type="button" class="btn small" onclick="insertEvent()">Submit</button></div>'+
                           '</div>'+
                           '</form>'
 
@@ -226,12 +226,12 @@
 
         // Form submission
 
-        function insertUser() {
+        function insertEvent() {
           $("#loading-mask").show();
           $("#loading").show();
           var name = $("#name").val();
-          var email = $("#email").val();
           var description = $("#description").val();
+          var eventCalendar = $("#eventCalendar").val();
           var lat = $("#lat").val();
           var lng = $("#lng").val();
           if (name.length == 0) {
@@ -242,7 +242,7 @@
             alert("Email is required!");
             return false;
           }
-          var dataString = 'name='+ name + '&email=' + email + '&description=' + description + '&lat=' + lat + '&lng=' + lng;
+          var dataString = 'name='+ name + '&description=' + description + '&eventCalendar=' + eventCalendar + '&lat=' + lat + '&lng=' + lng;
           //console.log(dataString);
           $.ajax({
             type: "POST",
